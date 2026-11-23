@@ -1,0 +1,41 @@
+=== Modo: sin-join ===
+[Principal] Id del hilo principal: 1
+[Principal] Mensaje propio 1 (Id 1)
+[Hilo] Arranco. Mi Id es 4
+[Hilo] Numero 1
+[Principal] Mensaje propio 2 (Id 1)
+[Hilo] Numero 2
+[Principal] Mensaje propio 3 (Id 1)
+[Hilo] Numero 3
+[Principal] Fin del programa
+[Hilo] Numero 4
+[Hilo] Numero 5
+[Hilo] Termino
+
+=== Modo: join-inmediato ===
+[Principal] Id del hilo principal: 1
+[Hilo] Arranco. Mi Id es 4
+[Hilo] Numero 1
+[Hilo] Numero 2
+[Hilo] Numero 3
+[Hilo] Numero 4
+[Hilo] Numero 5
+[Hilo] Termino
+[Principal] Mensaje propio 1 (Id 1)
+[Principal] Mensaje propio 2 (Id 1)
+[Principal] Mensaje propio 3 (Id 1)
+[Principal] Fin del programa
+
+=== Modo: join-final ===
+[Principal] Id del hilo principal: 1
+[Principal] Mensaje propio 1 (Id 1)
+[Hilo] Arranco. Mi Id es 4
+[Hilo] Numero 1
+[Principal] Mensaje propio 2 (Id 1)
+[Hilo] Numero 2
+[Principal] Mensaje propio 3 (Id 1)
+[Hilo] Numero 3
+[Hilo] Numero 4
+[Hilo] Numero 5
+[Hilo] Termino
+[Principal] Fin del programa
