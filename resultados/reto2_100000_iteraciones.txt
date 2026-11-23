@@ -1,0 +1,25 @@
+Iteraciones por hilo: 100,000 | Resultado esperado: 200,000
+
+--- SIN proteccion ---
+Ejecucion 1: 200,000 (OK)
+Ejecucion 2: 197,723 (MAL, faltan 2,277)
+Ejecucion 3: 200,000 (OK)
+Ejecucion 4: 200,000 (OK)
+Ejecucion 5: 200,000 (OK)
+Correctas: 4/5 | Tiempo de las 5 ejecuciones: 6 ms
+
+--- Con lock ---
+Ejecucion 1: 200,000 (OK)
+Ejecucion 2: 200,000 (OK)
+Ejecucion 3: 200,000 (OK)
+Ejecucion 4: 200,000 (OK)
+Ejecucion 5: 200,000 (OK)
+Correctas: 5/5 | Tiempo de las 5 ejecuciones: 118 ms
+
+--- Con Interlocked.Increment ---
+Ejecucion 1: 200,000 (OK)
+Ejecucion 2: 200,000 (OK)
+Ejecucion 3: 200,000 (OK)
+Ejecucion 4: 200,000 (OK)
+Ejecucion 5: 200,000 (OK)
+Correctas: 5/5 | Tiempo de las 5 ejecuciones: 32 ms
