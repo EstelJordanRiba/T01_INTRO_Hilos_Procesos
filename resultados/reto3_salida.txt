@@ -1,0 +1,27 @@
+=== A) Una detras de otra (secuencial) ===
+  Inicio Archivo 1 (hilo 1)
+  Fin    Archivo 1
+  Inicio Archivo 2 (hilo 5)
+  Fin    Archivo 2
+  Inicio Archivo 3 (hilo 5)
+  Fin    Archivo 3
+Tiempo total secuencial: 6.00 s
+
+=== B) A la vez con Task.WhenAll ===
+  Inicio Archivo 1 (hilo 5)
+  Inicio Archivo 2 (hilo 5)
+  Inicio Archivo 3 (hilo 5)
+  Fin    Archivo 1
+  Fin    Archivo 2
+  Fin    Archivo 3
+Tiempo total con WhenAll: 3.00 s
+
+=== C) Pregunta: Thread.Sleep en lugar de Task.Delay (WhenAll) ===
+  Inicio Archivo 1 (hilo 7)
+  Fin    Archivo 1
+  Inicio Archivo 2 (hilo 7)
+  Fin    Archivo 2
+  Inicio Archivo 3 (hilo 7)
+  Fin    Archivo 3
+Tiempo total con Thread.Sleep: 6.00 s
+(Thread.Sleep bloquea el hilo que llama, asi que las 'descargas' se acaban ejecutando una tras otra.)
